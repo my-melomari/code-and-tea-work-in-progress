@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tea & Code Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>
+      <img src="tea.png" class="icon" alt="tea">
+      Tea & Code Tracker
+      <img src="code.png" class="icon" alt="code">
+    </h1>
+
+    <p id="timer">00:00:00</p>
+    <div class="timer-buttons">
+      <button id="startTimer">Start</button>
+      <button id="logTime">Stop</button>
+    </div>
+
+    <div class="tea-tracker">
+      <button id="minusTea">-1</button>
+      <img src="tea.png" class="tea-icon" alt="Tea Tracker">
+      <button id="plusTea">+1</button>
+      <p id="tea-count"></p>
+    </div>
+
+    <canvas id="trendChart"></canvas>
+
+    <div class="month-selector">
+      <label for="month">Month: </label>
+      <select id="month"></select>
+    </div>
+
+    <div class="weekdays">
+      <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+    </div>
+    <div id="calendar"></div>
+
+    <div id="custom-zone"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
